@@ -1,6 +1,8 @@
+console.clear();
+// Library for mathematical calculations, PI and Euler's Number
 class Calculator {
     constructor() {
-        //properties
+    //properties
         this.PI = 3.141592653589793;
         this.E = 2.718281828459045;
     }
@@ -8,10 +10,11 @@ class Calculator {
     get pi() {
         return `PI (${this.PI})`;
     }
-    //methods
+
     get e() {
         return `Euler's number  (${this.E})`;
     }
+    //methods
     ratio(x, y, width) {
         return `height is ${(width / x) * y} on ratio ${x}:${y}`;
     }
@@ -41,7 +44,6 @@ class Calculator {
     }
 }
 const calculate = new Calculator();
-
 
 console.log("\x1b[35m\n\n---PI------------------------");
 
@@ -81,10 +83,10 @@ console.log(calculate.modulation(45, 5));
 
 console.log("\x1b[33m\n---elevate---------------------");
 
-console.log(calculate.elevate(5, 4));
+console.log(calculate.elevate(40, 2));
 
 console.log("\x1b[33m\n---squareroot------------------");
 
-console.log(calculate.sqrt(64));
+console.log(calculate.sqrt(326));
 
 console.log("\x1b[34m\n-------------------------------");
